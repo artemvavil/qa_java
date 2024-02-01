@@ -20,8 +20,8 @@ public class CatTest {
     public void getSound() {
         Cat cat = new Cat(homeCat);
         String catSay = cat.getSound();
-        String catSayRes = "Мяу";
-        assertEquals(catSay, catSayRes);
+        String catSayResult = "Мяу";
+        assertEquals(catSayResult, catSay);
     }
 
     @Test

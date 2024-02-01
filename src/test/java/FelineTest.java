@@ -24,16 +24,16 @@ public class FelineTest {
     @Test
     public void eatMeat() throws Exception {
         Feline feline = new Feline();
-        List<String> exRes = List.of("Животные", "Птицы", "Рыба");
+        List<String> exResult = List.of("Животные", "Птицы", "Рыба");
         List<String> result = feline.eatMeat();
-        assertEquals(result, exRes);
+        assertEquals(result, exResult);
     }
 
     @Test
     public void getFamily() {
         Feline feline = new Feline();
-        String exRes = "Кошачьи";
+        String exResult = "Кошачьи";
         String result = feline.getFamily();
-        assertEquals(result, exRes);
+        assertEquals(result, exResult);
     }
 }
