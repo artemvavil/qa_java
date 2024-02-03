@@ -10,7 +10,7 @@ public class FelineTest {
     public void getKittens() {
         Feline feline = new Feline();
         int result = feline.getKittens();
-        assertEquals(result, 1);
+        assertEquals(1, result);
     }
 
     @Test
@@ -18,7 +18,7 @@ public class FelineTest {
         Feline feline = new Feline();
         int kittensCount = 10;
         int result = feline.getKittens(kittensCount);
-        assertEquals(result, kittensCount);
+        assertEquals(kittensCount, result);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class FelineTest {
         Feline feline = new Feline();
         List<String> exResult = List.of("Животные", "Птицы", "Рыба");
         List<String> result = feline.eatMeat();
-        assertEquals(result, exResult);
+        assertEquals(exResult, result);
     }
 
     @Test
@@ -34,6 +34,6 @@ public class FelineTest {
         Feline feline = new Feline();
         String exResult = "Кошачьи";
         String result = feline.getFamily();
-        assertEquals(result, exResult);
+        assertEquals(exResult, result);
     }
 }

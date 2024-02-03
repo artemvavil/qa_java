@@ -30,14 +30,14 @@ public class LionTest {
         Feline mockFel = Mockito.mock(Feline.class);
         Lion lion = new Lion(sex, mockFel);
         Mockito.when(mockFel.getKittens()).thenReturn(1);
-        assertEquals(lion.getKittens(), 1);
+        assertEquals(1, lion.getKittens());
     }
 
     @Test
     public void doesHaveMane() throws Exception {
         Feline mockFel = Mockito.mock(Feline.class);
         Lion lion = new Lion(sex, mockFel);
-        assertEquals(lion.doesHaveMane(), mane);
+        assertEquals(mane, lion.doesHaveMane());
     }
 
     @Test
@@ -47,7 +47,7 @@ public class LionTest {
         Mockito.when(mockFel.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         List<String> exResult = List.of("Животные", "Птицы", "Рыба");
         List<String> result = lion.getFood();
-        assertEquals(result, exResult);
+        assertEquals(exResult, result);
     }
 
     @Test(expected = Exception.class)
